@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serviço de monitoramento"
+            android:id="@+id/statusApp"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/buttonSaveEmailConta"
+            android:layout_alignLeft="@+id/valueLatitude"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Conta de registro"
+            android:id="@+id/labelEmailConta"
+            android:layout_below="@+id/statusApp"
+            android:layout_alignLeft="@+id/statusApp"
+            android:layout_marginTop="15dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/valueEmailConta"
+            android:layout_below="@+id/labelEmailConta"
+            android:layout_alignLeft="@+id/statusApp"
+            android:layout_toLeftOf="@+id/buttonSaveEmailConta"/>
+
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:id="@+id/buttonSaveEmailConta"
+            android:onClick="saveEmailConta"
+            android:layout_alignTop="@+id/valueEmailConta"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/valueEmailConta"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Latitude"
+            android:id="@+id/labelLatitude"
+            android:layout_below="@+id/valueEmailConta"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/statusApp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="---"
+            android:id="@+id/valueLatitude"
+            android:layout_below="@+id/labelLatitude"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Longitude"
+            android:id="@+id/labelLogintude"
+            android:layout_below="@+id/valueLatitude"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="---"
+            android:id="@+id/valueLongitude"
+            android:layout_below="@+id/labelLogintude"/>
+
+
+</RelativeLayout>

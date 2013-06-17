@@ -1,0 +1,12 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1371304205227 244 045ff451db7cd8e61285502b8c9bbf7405f2078d C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\menu\main.xml
+1371477045718 3633 e5bcd1806eabb1f3e8b14b38bf60c0fa6ebe3173 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\layout\activity_main.xml
+1371304205229 799 34d526f6e86f65ffa54952e61794a0f8fad8d6e7 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\values\values.xml
+1371304205229 1577 67f71cdaea71f41d92edd1bf89999caf795ec038 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\drawable-xxhdpi\ic_launcher.png
+1371304205232 130 90e37035f35f83953c491e73e930b7aea297a472 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\values-sw720dp-land\values.xml
+1371304205228 514 e5911d0c0196093692aa9992f8943c5475a9def9 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\drawable-mdpi\ic_launcher.png
+1371304205231 204 17d8b58c6302da626146dc8e938b627f27d3d5c2 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\values-v11\values.xml
+1371304205229 774 41b64b1f97fa60375c0fda3ae4012dc11ea89976 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\drawable-hdpi\ic_launcher.png
+1371304205230 1013 525705bc4ac101efd4d6d2213333230455c13ba6 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\drawable-xhdpi\ic_launcher.png

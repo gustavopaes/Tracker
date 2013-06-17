@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tracker/Tracker.iml" filepath="$PROJECT_DIR$/Tracker/Tracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrackerProject.iml" filepath="$PROJECT_DIR$/TrackerProject.iml" />
+      <module fileurl="file://$APPLICATION_HOME_DIR$/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" filepath="$APPLICATION_HOME_DIR$/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" />
+    </modules>
+  </component>
+</project>
+
