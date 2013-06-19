@@ -1,6 +1,6 @@
 package net.gustavopaes.tracker;
 
-import android.content.Context;
+import android.location.LocationListener;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
@@ -11,7 +11,6 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.EditText;
-import android.location.LocationManager;
 import android.location.Location;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -22,8 +21,9 @@ public class MainActivity extends Activity {
     TextView longitude;
     Switch statusApp;
     EditText contaApp;
-    Location lastKnownLocation;
+    TextView logArea;
     SharedPreferences preferences;
+    TrackerLocation location;
 
     private static String PREF_EMAIL = "appEmailConta";
     private static String PREF_STATUS = "appState";
@@ -33,6 +33,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final MainActivity instance = this;
+
         // Lê as preferências do app
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
@@ -41,10 +43,11 @@ public class MainActivity extends Activity {
         longitude = (TextView) findViewById(R.id.valueLongitude);
         statusApp = (Switch) findViewById(R.id.statusApp);
         contaApp = (EditText) findViewById(R.id.valueEmailConta);
+        logArea = (TextView) findViewById(R.id.logArea);
 
         // Armazena a instancia em uma variável para ser acessada internamente em funções
         // fora desse escopo.
-        final MainActivity instance = this;
+        location = new TrackerLocation(instance);
 
         // define evento para ativacao/desativacao do app
         statusApp.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -64,13 +67,6 @@ public class MainActivity extends Activity {
         contaApp.setText(preferences.getString(PREF_EMAIL, ""));
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
     /**
      * Obtém a posição do usuário, via network ou GPS, o que estiver disponível.
      *
@@ -81,18 +77,41 @@ public class MainActivity extends Activity {
      * e registra um Listener para o Service atualizar a posição no servidor.
      */
     private void getUserLocation() {
-        // Quem vai servir a posição do usuário
-        String locationProvider = LocationManager.NETWORK_PROVIDER;
-
-        // Instancia o gerenciador de localização
-        LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-
-        // obtém a última posição conhecida do usuário
-        lastKnownLocation = locationManager.getLastKnownLocation(locationProvider);
-
-        latitude.setText( String.valueOf(lastKnownLocation.getLatitude()) );
-        longitude.setText( String.valueOf(lastKnownLocation.getLongitude()) );
+        this.workWithLocation(location.getKnowLocation());
     }
+
+    /**
+     * Escreve a nova localização nos labels destinados para isso e envia via HTTP POST
+     * a hora e a localização para o webserivce.
+     * @param location
+     */
+    public void workWithLocation(Location location) {
+        try {
+            String x = String.valueOf(location.getLatitude());
+            String y = String.valueOf(location.getLongitude());
+            latitude.setText( x );
+            longitude.setText( y );
+
+            Log.i("Nova latitude", x);
+            Log.i("Nova longitude", y);
+
+            logArea.setText("Definindo novas posicoes\n"+logArea.getText());
+            logArea.setText("Nova latitude: "+String.valueOf(x)+"\n"+logArea.getText());
+            logArea.setText("Nova longitude: "+String.valueOf(y)+"\n"+logArea.getText());
+        }
+        catch (NullPointerException e) {
+            logArea.setText("Location veio NULL\n"+logArea.getText());
+        }
+    }
+
+    /*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    */
 
     /**
      * Salva o e-mail da conta.
@@ -109,7 +128,7 @@ public class MainActivity extends Activity {
      * É executado também no onCreate();
      */
     public void changeAppState(Boolean state) {
-        Log.v("App state:", String.valueOf(state));
+        Log.i("App state", String.valueOf(state));
 
         if(state) {
             this.getUserLocation();

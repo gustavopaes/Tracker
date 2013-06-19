@@ -12,6 +12,9 @@
       </config>
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="net.gustavopaes.tracker" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="16eb144e-b030-4de4-aa61-a5231f32e5f4" name="Default" comment="" />
     <ignored path="Tracker.iws" />
@@ -81,26 +84,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="text-editor">
+            <state line="94" column="43" selection-start="3917" selection-end="3917" vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="1972">
+              <folding />
+            </state>
+          </provider>
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state line="48" column="43" selection-start="2006" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1632">
-              <folding />
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="35" selection-start="1050" selection-end="1058" vertical-scroll-proportion="0.059336822" vertical-offset="561" max-vertical-offset="2499">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1812#2256#0" expanded="true" />
+                <element signature="e#2245#2246#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivity.java">
+      <file leaf-file-name="TrackerLocation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/TrackerLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.0" vertical-offset="842" max-vertical-offset="2176">
+            <state line="42" column="5" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1377">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1715#2159#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +123,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tracker/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="78" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="595">
+            <state line="26" column="0" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -158,8 +172,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Tracker/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivityImpl.java" />
         <option value="$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/TrackerLocation.java" />
       </list>
     </option>
   </component>
@@ -198,62 +214,14 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tracker" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.2.2 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.2.2 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.2.2 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -388,12 +356,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -401,6 +363,7 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
@@ -410,9 +373,16 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus4" />
-    <property name="FullScreen" value="false" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.gustavopaes.tracker" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.Tracker">
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -556,7 +526,7 @@
     </configuration>
     <configuration default="false" name="Tracker" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="Tracker" />
-      <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_CLASS" value="net.gustavopaes.tracker.MainActivity" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
@@ -642,21 +612,21 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.6730769" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.6776018" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.28733033" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.28733033" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3223982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67081445" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67081445" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6730769" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6776018" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -727,12 +697,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="71" column="46" selection-start="2992" selection-end="3009" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1564">
+    <entry file="file://$PROJECT_DIR$/Tracker/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
@@ -742,8 +709,8 @@
         <state line="72" column="0" selection-start="2431" selection-end="2431" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1734">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1715#2159#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#1812#2256#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -756,13 +723,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="748">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivity.java">
@@ -770,8 +737,8 @@
         <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="476">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1715#2159#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#1812#2256#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -784,13 +751,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/drawable-mdpi/ic_launcher.png">
@@ -800,9 +767,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/values-v11/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="11" selection-end="305" vertical-scroll-proportion="0.26984128" vertical-offset="0" max-vertical-offset="567">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="11" selection-end="305" vertical-scroll-proportion="0.26984128" vertical-offset="0" max-vertical-offset="567" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/Tracker.iml">
@@ -822,29 +787,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="78" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="595">
+        <state line="26" column="0" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state line="94" column="43" selection-start="3917" selection-end="3917" vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/TrackerLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="5" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1377">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tracker/src/main/java/net/gustavopaes/tracker/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.0" vertical-offset="842" max-vertical-offset="2176">
+        <state line="35" column="35" selection-start="1050" selection-end="1058" vertical-scroll-proportion="0.059336822" vertical-offset="561" max-vertical-offset="2499">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1715#2159#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#1812#2256#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tracker/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="2006" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1632">
-          <folding />
         </state>
       </provider>
     </entry>
