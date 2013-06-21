@@ -2,7 +2,7 @@
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
 1371304205227 244 045ff451db7cd8e61285502b8c9bbf7405f2078d C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\menu\main.xml
-1371646045135 4452 19e9216449faf86670bf2bd292b1693ab810a30d C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\layout\activity_main.xml
+1371731561938 4500 0913f935602477ea80a1b24b30d5251ff6cd704c C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\layout\activity_main.xml
 1371304205229 799 34d526f6e86f65ffa54952e61794a0f8fad8d6e7 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\values\values.xml
 1371304205229 1577 67f71cdaea71f41d92edd1bf89999caf795ec038 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\drawable-xxhdpi\ic_launcher.png
 1371304205232 130 90e37035f35f83953c491e73e930b7aea297a472 C:\Users\Gustavo\AndroidStudioProjects\TrackerProject\Tracker\build\res\all\release\values-sw720dp-land\values.xml

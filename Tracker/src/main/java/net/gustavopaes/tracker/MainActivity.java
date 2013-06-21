@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
     TextView logArea;
     SharedPreferences preferences;
     TrackerLocation location;
+    TrackerWebservice webservice;
 
     private static String PREF_EMAIL = "appEmailConta";
     private static String PREF_STATUS = "appState";
@@ -48,6 +49,9 @@ public class MainActivity extends Activity {
         // Armazena a instancia em uma variável para ser acessada internamente em funções
         // fora desse escopo.
         location = new TrackerLocation(instance);
+
+        // Instancia o Webservice
+        webservice = new TrackerWebservice(instance);
 
         // define evento para ativacao/desativacao do app
         statusApp.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -92,12 +96,12 @@ public class MainActivity extends Activity {
             latitude.setText( x );
             longitude.setText( y );
 
-            Log.i("Nova latitude", x);
-            Log.i("Nova longitude", y);
+            //Log.i("Nova latitude", x);
+            //Log.i("Nova longitude", y);
 
-            logArea.setText("Definindo novas posicoes\n"+logArea.getText());
-            logArea.setText("Nova latitude: "+String.valueOf(x)+"\n"+logArea.getText());
-            logArea.setText("Nova longitude: "+String.valueOf(y)+"\n"+logArea.getText());
+            //logArea.setText("Definindo novas posicoes\n"+logArea.getText());
+            //logArea.setText("Nova latitude: "+String.valueOf(x)+"\n"+logArea.getText());
+            //logArea.setText("Nova longitude: "+String.valueOf(y)+"\n"+logArea.getText());
         }
         catch (NullPointerException e) {
             logArea.setText("Location veio NULL\n"+logArea.getText());
@@ -131,9 +135,17 @@ public class MainActivity extends Activity {
         Log.i("App state", String.valueOf(state));
 
         if(state) {
+            logArea.setText("Status Internet: "+(String.valueOf(webservice.isNetworkAvailable()))+"\nAtivado!");
             this.getUserLocation();
+
+            // inicia
+            location.startListenerLocation();
         }
         else {
+            // para
+            location.stopListenerLocation();
+
+            logArea.setText("Desativado!");
             latitude.setText("---");
             longitude.setText("---");
         }
